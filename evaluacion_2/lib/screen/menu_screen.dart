@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DrawerScreen extends StatelessWidget {
-  const DrawerScreen({super.key});
+class MenuScreen extends StatelessWidget {
+  const MenuScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

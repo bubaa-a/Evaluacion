@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class AdoptScreen extends StatelessWidget {
-  const AdoptScreen({super.key});
+class DonateScreen extends StatelessWidget {
+  const DonateScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ADOPT')),
+      appBar: AppBar(title: Text('DONATE')),
       body: Center(child: Text('Contenido del widget')),
     );
   }

@@ -1,4 +1,4 @@
-import 'package:evaluacion_2/screen/home_screen.dart';
+import 'package:evaluacion_2/routes/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeScreen(),
+    return MaterialApp(
+      title: 'Evaluacion 2',
       debugShowCheckedModeBanner: false,
+      initialRoute: Approutes.initialRoute,
+      routes: Approutes.routes,
+      onGenerateRoute: Approutes.onGenerateRoute,
     );
   }
 }
