@@ -9,9 +9,7 @@ class ListTileItem extends StatelessWidget {
     return ListTile(
       contentPadding: const EdgeInsets.only(left: 32.0),
       title: Text(text, style: const TextStyle(color: Colors.white)),
-      onTap: () {
-        // Define la acción que necesites para cada item
-      },
+      onTap: () {},
     );
   }
 }

@@ -28,9 +28,7 @@ class MenuScreen extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          // Acción del FAB (por ejemplo, abrir chat)
-        },
+        onPressed: () {},
         backgroundColor: Colors.orange[800],
         child: const Icon(Icons.chat),
       ),
@@ -38,10 +36,8 @@ class MenuScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: const [
-            // Widget Search Bar
             SearchBarWidget(),
 
-            // Fila con botones Adopt y Donate
             Row(
               children: [
                 Expanded(child: BtnAdopt()),
@@ -52,15 +48,12 @@ class MenuScreen extends StatelessWidget {
 
             SizedBox(height: 24),
 
-            // Sección OUR WORK
             OurWorkExpansionTile(),
             SizedBox(height: 8),
 
-            // Sección GET INVOLVED
             GetInvolvedExpansionTile(),
             SizedBox(height: 8),
 
-            // Sección ABOUT US
             AboutUsExpansionTile(),
           ],
         ),
