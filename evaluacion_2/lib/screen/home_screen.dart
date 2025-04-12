@@ -10,16 +10,18 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        padding: const EdgeInsets.all(0.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            const W01HomeScreen(),
-            const W02HomeScreen(),
-            const W03HomeScreen(),
-            const W04HomeScreen(),
-          ],
+      body: SafeArea(
+        // Opcional, para evitar que el contenido se tape con la barra de estado
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: const [
+              W01HomeScreen(),
+              W02HomeScreen(),
+              W03HomeScreen(),
+              W04HomeScreen(),
+            ],
+          ),
         ),
       ),
     );
