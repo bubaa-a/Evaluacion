@@ -17,7 +17,7 @@ class W01HomeScreen extends StatelessWidget {
             children: [
               Wlogo(),
               Padding(
-                padding: EdgeInsets.only(right: 20.0),
+                padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: WIcon(icon: Icons.menu),
               ),
             ],

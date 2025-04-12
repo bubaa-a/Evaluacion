@@ -6,7 +6,7 @@ class AdoptScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('ADOPT')),
-      body: Center(child: Text('Contenido del widget')),
+      body: Center(child: Text('Contenido del Adopt')),
     );
   }
 }

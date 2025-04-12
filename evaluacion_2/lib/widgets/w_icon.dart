@@ -6,6 +6,12 @@ class WIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [Icon(icon, color: Colors.black, size: 50)]);
+    return //Column(children: [Icon(icon, color: Colors.black, size: 50),]);
+    IconButton(
+      icon: Icon(icon, color: Colors.black, size: 50),
+      onPressed: () {
+        Navigator.pushNamed(context, 'menu');
+      },
+    );
   }
 }

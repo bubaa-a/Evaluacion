@@ -1,3 +1,7 @@
+import 'package:evaluacion_2/widgets/w_divider.dart';
+import 'package:evaluacion_2/widgets/w_donate/wcont_imag.dart';
+import 'package:evaluacion_2/widgets/w_donate/wcont_text.dart';
+import 'package:evaluacion_2/widgets/w_home/w_01_home_screen.dart';
 import 'package:flutter/material.dart';
 
 class DonateScreen extends StatelessWidget {
@@ -5,8 +9,21 @@ class DonateScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('DONATE')),
-      body: Center(child: Text('Contenido del widget')),
+      body: Container(
+        padding: const EdgeInsets.all(0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const W01HomeScreen(),
+            const WDivider(),
+            Container(
+              padding: const EdgeInsets.all(20.0),
+              child: const WcontImag(),
+            ),
+            WcontText(),
+          ],
+        ),
+      ),
     );
   }
 }

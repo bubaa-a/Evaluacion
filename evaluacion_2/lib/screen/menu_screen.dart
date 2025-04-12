@@ -5,8 +5,8 @@ class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Nombre del Widget')),
-      body: Center(child: Text('Contenido del widget')),
+      appBar: AppBar(title: Text('MENU')),
+      body: Center(child: Text('Contenido del Menu')),
     );
   }
 }
