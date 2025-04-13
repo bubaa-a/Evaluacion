@@ -10,6 +10,8 @@ class Approutes {
     'menu': (BuildContext context) => const MenuScreen(),
   };
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
-    return MaterialPageRoute(builder: (context) => const ErrorScreen());
+    return MaterialPageRoute(
+      builder: (context) => const ErrorScreen()
+      );
   }
 }
