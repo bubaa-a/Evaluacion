@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Wlogo extends StatelessWidget {
-  const Wlogo({super.key});
+  final double height;
+  const Wlogo({super.key, required this.height});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class Wlogo extends StatelessWidget {
       },
       child: Padding(
         padding: const EdgeInsets.only(left: 20.0),
-        child: Image.asset('assets/logo2.png', height: 80),
+        child: Image.asset('assets/logo2.png', height: height),
       ),
     );
   }

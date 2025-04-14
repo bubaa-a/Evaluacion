@@ -1,8 +1,5 @@
-import 'package:evaluacion_2/widgets/w_home/w_01_home_screen.dart';
-import 'package:evaluacion_2/widgets/w_home/w_02_home_screen.dart';
-import 'package:evaluacion_2/widgets/w_home/w_03_home_screen.dart';
-import 'package:evaluacion_2/widgets/w_home/w_04_home_screen.dart';
 import 'package:flutter/material.dart';
+import '../widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,6 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        top: false,
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,

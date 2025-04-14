@@ -1,10 +1,5 @@
+import 'package:evaluacion_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:evaluacion_2/widgets/w_menu/search_bar_widget.dart';
-import 'package:evaluacion_2/widgets/btn_donate.dart';
-import 'package:evaluacion_2/widgets/btn_adopt.dart';
-import 'package:evaluacion_2/widgets/w_menu/our_work_expansion_tile.dart';
-import 'package:evaluacion_2/widgets/w_menu/get_involved_expansion_tile.dart';
-import 'package:evaluacion_2/widgets/w_menu/about_us_expansion_tile.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
@@ -33,16 +28,17 @@ class MenuScreen extends StatelessWidget {
         child: const Icon(Icons.chat),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: const [
             SearchBarWidget(),
 
             Row(
+              //mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Expanded(child: BtnAdopt()),
-                SizedBox(width: 8),
                 Expanded(child: BtnDonate()),
+                SizedBox(width: 90),
+                Expanded(child: BtnAdopt()),
               ],
             ),
 

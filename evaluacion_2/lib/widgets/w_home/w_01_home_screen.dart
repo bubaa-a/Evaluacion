@@ -1,6 +1,5 @@
-import 'package:evaluacion_2/widgets/w_icon.dart';
-import 'package:evaluacion_2/widgets/wlogo.dart';
 import 'package:flutter/material.dart';
+import '../widgets.dart';
 
 class W01HomeScreen extends StatelessWidget {
   const W01HomeScreen({super.key});
@@ -8,14 +7,14 @@ class W01HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 20.0),
+      padding: EdgeInsets.only(bottom:  20.0),
       child: Column(
         children: [
           SizedBox(height: 80),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Wlogo(),
+              Wlogo(height: 120,),
+              Expanded(child: Text('')),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
                 child: WIcon(icon: Icons.menu),

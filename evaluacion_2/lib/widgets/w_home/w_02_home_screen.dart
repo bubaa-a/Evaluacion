@@ -1,5 +1,4 @@
-import 'package:evaluacion_2/widgets/btn_adopt.dart';
-import 'package:evaluacion_2/widgets/btn_donate.dart';
+import 'package:evaluacion_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class W02HomeScreen extends StatelessWidget {
