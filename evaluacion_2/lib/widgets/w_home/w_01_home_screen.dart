@@ -1,6 +1,6 @@
-import 'package:evaluacion_2/widgets/w_icon.dart';
-import 'package:evaluacion_2/widgets/wlogo.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets.dart';
 
 class W01HomeScreen extends StatelessWidget {
   const W01HomeScreen({super.key});
