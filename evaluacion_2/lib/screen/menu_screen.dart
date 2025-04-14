@@ -1,10 +1,5 @@
+import 'package:evaluacion_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:evaluacion_2/widgets/w_menu/search_bar_widget.dart';
-import 'package:evaluacion_2/widgets/btn_donate.dart';
-import 'package:evaluacion_2/widgets/btn_adopt.dart';
-import 'package:evaluacion_2/widgets/w_menu/our_work_expansion_tile.dart';
-import 'package:evaluacion_2/widgets/w_menu/get_involved_expansion_tile.dart';
-import 'package:evaluacion_2/widgets/w_menu/about_us_expansion_tile.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});

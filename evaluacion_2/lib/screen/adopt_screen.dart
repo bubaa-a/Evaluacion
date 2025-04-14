@@ -1,3 +1,4 @@
+import 'package:evaluacion_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class AdoptScreen extends StatelessWidget {
@@ -5,8 +6,27 @@ class AdoptScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ADOPT')),
-      body: Center(child: Text('Contenido del Adopt')),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {},
+        label: const Text('Ayuda'),
+        icon: const Icon(Icons.chat_bubble_outline),
+        backgroundColor: Colors.orange,
+      ),
+
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: const [
+              W01AdoptScreen(),
+              W02AdoptScreen(),
+              W03AdoptScreen(),
+              W04AdoptScreen(),
+              W05AdoptScreen(),
+              ],
+          ),
+        ),
+      ),
     );
   }
 }

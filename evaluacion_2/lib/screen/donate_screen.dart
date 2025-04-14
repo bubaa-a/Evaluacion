@@ -8,7 +8,7 @@ class DonateScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        // Opcional, pero recomendable para evitar recortes en pantallas con notch
+        top: false,
         child: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.all(0.0),

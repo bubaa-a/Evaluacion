@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../widgets.dart';
 
 class W01HomeScreen extends StatelessWidget {
@@ -14,7 +13,7 @@ class W01HomeScreen extends StatelessWidget {
           SizedBox(height: 80),
           Row(
             children: [
-              Wlogo(),
+              Wlogo(height: 120,),
               Expanded(child: Text('')),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
