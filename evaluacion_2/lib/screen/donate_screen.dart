@@ -1,7 +1,4 @@
-import 'package:evaluacion_2/widgets/w_divider.dart';
-import 'package:evaluacion_2/widgets/w_donate/wcont_imag.dart';
-import 'package:evaluacion_2/widgets/w_donate/wcont_text.dart';
-import 'package:evaluacion_2/widgets/w_home/w_01_home_screen.dart';
+import 'package:evaluacion_2/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class DonateScreen extends StatelessWidget {

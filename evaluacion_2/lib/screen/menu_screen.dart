@@ -33,16 +33,17 @@ class MenuScreen extends StatelessWidget {
         child: const Icon(Icons.chat),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(20),
         child: Column(
           children: const [
             SearchBarWidget(),
 
             Row(
+              //mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Expanded(child: BtnAdopt()),
-                SizedBox(width: 8),
                 Expanded(child: BtnDonate()),
+                SizedBox(width: 90),
+                Expanded(child: BtnAdopt()),
               ],
             ),
 
